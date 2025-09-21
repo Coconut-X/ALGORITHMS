@@ -68,8 +68,8 @@ int mergeSort(int arr[], int l, int r){
 
 int main(){
 
-    int arr[] = {3, 5, 1, 10,9,2,6,8};
-    int n  = 8;
+    int arr[] = {3,2,9,1,7};
+    int n  = 5;
 
 
     int count1 = 0;

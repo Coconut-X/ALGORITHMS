@@ -67,7 +67,7 @@ int maxCrossingSum(vector<int>&arr, int left, int mid, int right){
 
     int maxRight = INT_MIN;
     sum = 0;
-    for(int x = mid+1; x <= right; x++){
+    for(int x = mid+1; x <= right; x++){ 
         sum+=arr[x];
         maxRight = max(maxRight, sum);
     }
