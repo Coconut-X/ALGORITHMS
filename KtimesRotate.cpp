@@ -31,8 +31,11 @@ int findKRotation(vi &arr, int low, int high){
     int n = arr.size();
     while(low <= high){
         int mid = low + (high - low)/2;
-        int next = (mid + 1)%n;
-        int prev = (mid + n - 1)%n; //
+        int next = (mid + 1);
+        if(next == n) next = 0; //circular array
+
+        int prev = (mid - 1);
+        if(prev == -1) prev = n - 1; //circular array
 
         //check if mid is the minimum element
         //78, 85, 92, 25, 34, 48, 56, 62
